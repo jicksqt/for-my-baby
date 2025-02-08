@@ -45,8 +45,8 @@ img {
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     .poem {
-        width: 100vw; /* Increases width to fit more text */
-        height: 90vh; /* Increases height to fit more text */
+        width: 110vw; /* Increases width to fit more text */
+        height: 110vh; /* Increases height to fit more text */
         font-size: 4vw; /* Scales font size dynamically */
         overflow-y: auto; /* Enables scrolling for long text */
         display: flex;
