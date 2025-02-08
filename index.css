@@ -41,7 +41,7 @@ img {
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     .poem {
-        width: 100%; /* Use more width on small screens */
+        width: 35%; /* Use more width on small screens */
         max-height: 100%; /* Limit height */
         overflow-y: auto; /* Enable scrolling */
         font-size: 3vw; /* Adjust font size */
