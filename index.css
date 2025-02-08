@@ -41,10 +41,16 @@ img {
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     .poem {
-        width: 100%; /* Use more width on small screens */
+        position: absolute;
+        max-width: 100%; /* Use more width on small screens */
         max-height: 100%; /* Limit height */
         font-size: 2vw; /* Adjust font size */
+        font-family: Verdana;
+        font-weight: normal;
+        color: white;
         text-align: justify; /* Center text */
+        mix-blend-mode: overlay;
+        opacity: 1;
         overflow: hidden;
     }
 }
