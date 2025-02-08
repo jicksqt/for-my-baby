@@ -41,10 +41,10 @@ img {
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     .poem {
-        width: 90vw; /* Use more width on small screens */
-        max-height: 60vh; /* Limit height */
+        width: 20vw; /* Use more width on small screens */
+        max-height: 20vh; /* Limit height */
         overflow-y: auto; /* Enable scrolling */
-        font-size: 4vw; /* Adjust font size */
-        text-align: center; /* Center text */
+        font-size: 2vw; /* Adjust font size */
+        text-align: justify; /* Center text */
     }
 }
