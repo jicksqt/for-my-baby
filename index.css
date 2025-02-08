@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     background: black; /* Fallback in case the image doesn't load */
-    overflow: hidden; /* Prevent scrolling */
+    overflow: hidden; /* Prevent scrolling on body */
     position: relative;
 }
 
@@ -28,29 +28,31 @@ img {
 /* Transparent text effect */
 .poem {
     position: absolute;
-    max-width: 35%;
+    width: 35%;
+    height: 80vh; /* Adjusted to allow space */
+    max-height: 90vh;
     text-align: justify;
-    font-family: Verdana;
+    font-family: Verdana, sans-serif;
     font-size: 12px;
     font-weight: normal;
     color: white;
     mix-blend-mode: overlay; /* Blends text with the background */
     opacity: 1;
+    overflow-y: auto; /* Enables scrolling if text overflows */
+    padding: 10px; /* Adds space for readability */
 }
 
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     .poem {
-        position: absolute;
-        height: 100vh;
-        width: 100vw;
-        font-size: 2vw; /* Adjust font size */
-        font-family: Verdana;
-        font-weight: normal;
-        color: white;
-        text-align: justify; /* Center text */
-        mix-blend-mode: overlay;
-        opacity: 1;
-        overflow: hidden;
+        width: 90vw; /* Increases width to fit more text */
+        height: 90vh; /* Increases height to fit more text */
+        font-size: 4vw; /* Scales font size dynamically */
+        padding: 5vw; /* Adds spacing */
+        overflow-y: auto; /* Enables scrolling for long text */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
     }
 }
