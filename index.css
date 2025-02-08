@@ -1,0 +1,38 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen background */
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black; /* Fallback in case the image doesn't load */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Ensuring image fits the whole screen without cropping */
+img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain; /* Ensures the whole image is seen without cropping */
+}
+
+/* Transparent text effect */
+.poem {
+    position: absolute;
+    width: 35%;
+    text-align: justify;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+    mix-blend-mode: overlay; /* Blends text with the background */
+    opacity: 1;
+}
