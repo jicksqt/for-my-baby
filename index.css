@@ -42,7 +42,7 @@ img {
 @media (max-width: 600px) {
     .poem {
         width: 100vw; /* Increases width to fit more text */
-        height: 140vh; /* Increases height to fit more text */
+        height: 100vh; /* Increases height to fit more text */
         font-size: 4vw; /* Scales font size dynamically */
         font-family: Verdana;
         overflow-y: auto; /* Enables scrolling for long text */
