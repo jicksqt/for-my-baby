@@ -42,8 +42,8 @@ img {
 @media (max-width: 600px) {
     .poem {
         position: absolute;
-        max-width: 100%; /* Use more width on small screens */
-        max-height: 100%; /* Limit height */
+        height: 100vh;
+        width: 100vw;
         font-size: 2vw; /* Adjust font size */
         font-family: Verdana;
         font-weight: normal;
