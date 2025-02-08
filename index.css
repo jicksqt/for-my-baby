@@ -28,26 +28,24 @@ img {
 /* Transparent text effect */
 .poem {
     position: absolute;
-    width: 35%;
-    height: 80vh; /* Adjusted to allow space */
-    max-height: 90vh;
+    max-width: 35%;
     text-align: justify;
-    font-family: Verdana, sans-serif;
+    font-family: Verdana;
     font-size: 12px;
     font-weight: normal;
     color: white;
     mix-blend-mode: overlay; /* Blends text with the background */
     opacity: 1;
     overflow-y: auto; /* Enables scrolling if text overflows */
-    padding: 10px; /* Adds space for readability */
 }
 
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     .poem {
-        width: 110vw; /* Increases width to fit more text */
-        height: 110vh; /* Increases height to fit more text */
+        width: 100vw; /* Increases width to fit more text */
+        height: 140vh; /* Increases height to fit more text */
         font-size: 4vw; /* Scales font size dynamically */
+        font-family: Verdana;
         overflow-y: auto; /* Enables scrolling for long text */
         display: flex;
         flex-direction: column;
