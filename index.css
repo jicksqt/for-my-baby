@@ -28,25 +28,18 @@ img {
 /* Responsive and transparent text effect */
 .poem {
     position: absolute;
-    max-width: 90%;  /* Make it flexible on different screen sizes */
     text-align: justify;
-    font-family: 'Verdana', sans-serif;
-    font-size: 1.2rem; /* Adjust size to scale with screen */
-    font-weight: 400; /* Normal weight */
-    color: rgba(255, 255, 255, 0.7); /* White with transparency */
-    
-    top: 10vh; /* Move it slightly below the center */
-    left: 5vw; /* Add spacing from the left */
-    padding: 10px; /* Extra padding */
-    
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Text blending effect */
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+    mix-blend-mode: overlay; /* Blends text with the background */
+    opacity: 1;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     .poem {
         font-size: 1rem; /* Smaller text on small screens */
-        max-width: 95%; /* Use more width on mobile */
-        top: 15vh; /* Adjust position */
     }
 }
