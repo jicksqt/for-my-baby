@@ -22,12 +22,13 @@ img {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    object-fit: contain; /* Ensures the whole image is fully seen */
+    object-fit: contain; /* Ensures the whole image is seen without cropping */
 }
 
-/* Responsive and transparent text effect */
+/* Transparent text effect */
 .poem {
     position: absolute;
+    max-width: 35%;
     text-align: justify;
     font-family: Verdana;
     font-size: 12px;
@@ -40,6 +41,10 @@ img {
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     .poem {
-        font-size: 1rem; /* Smaller text on small screens */
+        width: 90vw; /* Use more width on small screens */
+        max-height: 60vh; /* Limit height */
+        overflow-y: auto; /* Enable scrolling */
+        font-size: 4vw; /* Adjust font size */
+        text-align: center; /* Center text */
     }
 }
