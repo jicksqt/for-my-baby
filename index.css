@@ -28,7 +28,7 @@ img {
 /* Transparent text effect */
 .poem {
     position: absolute;
-    max-width: 35%;
+    width: 35%;
     text-align: justify;
     font-family: Verdana;
     font-size: 12px;
@@ -36,7 +36,6 @@ img {
     color: white;
     mix-blend-mode: overlay; /* Blends text with the background */
     opacity: 1;
-    overflow-y: auto; /* Enables scrolling if text overflows */
 }
 
 /* Mobile responsiveness */
