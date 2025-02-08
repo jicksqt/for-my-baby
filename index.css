@@ -43,8 +43,8 @@ img {
     .poem {
         width: 35%; /* Use more width on small screens */
         max-height: 100%; /* Limit height */
-        overflow-y: auto; /* Enable scrolling */
         font-size: 3vw; /* Adjust font size */
         text-align: justify; /* Center text */
+        overflow: hidden;
     }
 }
